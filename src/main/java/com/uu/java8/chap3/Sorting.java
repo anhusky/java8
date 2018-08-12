@@ -37,7 +37,7 @@ public class Sorting {
                 new Apple(120, "yellow")));
         inventory.sort((a,b) -> a.getWeight() - b.getWeight());
         for (Apple a : inventory) {
-            System.out.println(a.weight);
+            System.out.println(a.color +"-------"+ a.weight);
         }
 
     }
@@ -49,9 +49,9 @@ public class Sorting {
                 new Apple(80, "b"),
                 new Apple(155, "a"),
                 new Apple(120, "cbbbb")));
-        inventory.sort(comparing(Apple::getColor));
+        inventory.sort(comparing(Apple::getWeight).reversed());
         for (Apple a : inventory) {
-            System.out.println(a.color);
+            System.out.println(a.color +"-------"+ a.weight);
         }
 
 

@@ -3,15 +3,14 @@ package com.uu.java8.chap3;
 import org.junit.jupiter.api.Test;
 
 /**
- * Hello world!
+ * 描述：
  *
- */
-
-public class App
-{
+ * @author liupenghao
+ * @create 2018-07-11 下午3:12
+ **/
+public class Bug {
     @Test
-    public  void testInt(  )
-    {
+    public void testInt() {
         Integer portNumber = 1337;
         Runnable r = () -> System.out.println(portNumber);
         //portNumber = 31337;
@@ -25,10 +24,10 @@ public class App
     }
 
     @Test
-    public void testClass(){
+    public void testClass() {
         A a = new A();
-        a.name="你好啊 ";
-        Runnable r = () ->  {
+        a.name = "你好啊 ";
+        Runnable r = () -> {
             //a.name = "------";
             System.out.println(a.name);
         };
